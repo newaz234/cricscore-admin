@@ -1,6 +1,6 @@
 import Foundation
 import FirebaseFirestore
-
+import FirebaseFirestoreSwift 
 class AdminService: ObservableObject {
     @Published var matches: [FirebaseMatch] = []
     @Published var isSaving = false
