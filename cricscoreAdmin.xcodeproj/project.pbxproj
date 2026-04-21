@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225867502F973CFA006EB564 /* cricscoreAdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258674F2F973CFA006EB564 /* cricscoreAdminApp.swift */; };
+		225867542F973CFC006EB564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225867532F973CFC006EB564 /* Assets.xcassets */; };
+		225867572F973CFC006EB564 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225867562F973CFC006EB564 /* Preview Assets.xcassets */; };
+		225867612F973CFD006EB564 /* cricscoreAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225867602F973CFD006EB564 /* cricscoreAdminTests.swift */; };
+		2258676B2F973CFD006EB564 /* cricscoreAdminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258676A2F973CFD006EB564 /* cricscoreAdminUITests.swift */; };
+		2258676D2F973CFD006EB564 /* cricscoreAdminUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258676C2F973CFD006EB564 /* cricscoreAdminUITestsLaunchTests.swift */; };
+		2258677B2F9742E1006EB564 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2258677A2F9742E1006EB564 /* FirebaseAuth */; };
+		2258677D2F9742E1006EB564 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2258677C2F9742E1006EB564 /* FirebaseFirestore */; };
+		2258677F2F9742E1006EB564 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2258677E2F9742E1006EB564 /* FirebaseFirestoreSwift */; };
+		225867812F9745BB006EB564 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 225867802F9745BB006EB564 /* GoogleService-Info.plist */; };
+		225867832F9746A4006EB564 /* AdminService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225867822F9746A4006EB564 /* AdminService.swift */; };
+		225867852F974705006EB564 /* AdminContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225867842F974705006EB564 /* AdminContentView.swift */; };
+		225867872F9747A9006EB564 /* InningsAndBallEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225867862F9747A9006EB564 /* InningsAndBallEntry.swift */; };
+		225867892F9747FF006EB564 /* FirebaseMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225867882F9747FF006EB564 /* FirebaseMatch.swift */; };
+		2258678B2F974836006EB564 /* BallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258678A2F974836006EB564 /* BallModel.swift */; };
+		2258678D2F974890006EB564 /* SharedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258678C2F974890006EB564 /* SharedComponents.swift */; };
+		2258678F2F9748EF006EB564 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258678E2F9748EF006EB564 /* Services.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2258675D2F973CFC006EB564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225867442F973CFA006EB564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2258674B2F973CFA006EB564;
+			remoteInfo = cricscoreAdmin;
+		};
+		225867672F973CFD006EB564 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225867442F973CFA006EB564 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2258674B2F973CFA006EB564;
+			remoteInfo = cricscoreAdmin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2258674C2F973CFA006EB564 /* cricscoreAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cricscoreAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2258674F2F973CFA006EB564 /* cricscoreAdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cricscoreAdminApp.swift; sourceTree = "<group>"; };
+		225867532F973CFC006EB564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		225867562F973CFC006EB564 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2258675C2F973CFC006EB564 /* cricscoreAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cricscoreAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		225867602F973CFD006EB564 /* cricscoreAdminTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cricscoreAdminTests.swift; sourceTree = "<group>"; };
+		225867662F973CFD006EB564 /* cricscoreAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cricscoreAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2258676A2F973CFD006EB564 /* cricscoreAdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cricscoreAdminUITests.swift; sourceTree = "<group>"; };
+		2258676C2F973CFD006EB564 /* cricscoreAdminUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cricscoreAdminUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		225867802F9745BB006EB564 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		225867822F9746A4006EB564 /* AdminService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminService.swift; sourceTree = "<group>"; };
+		225867842F974705006EB564 /* AdminContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminContentView.swift; sourceTree = "<group>"; };
+		225867862F9747A9006EB564 /* InningsAndBallEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InningsAndBallEntry.swift; sourceTree = "<group>"; };
+		225867882F9747FF006EB564 /* FirebaseMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMatch.swift; sourceTree = "<group>"; };
+		2258678A2F974836006EB564 /* BallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallModel.swift; sourceTree = "<group>"; };
+		2258678C2F974890006EB564 /* SharedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComponents.swift; sourceTree = "<group>"; };
+		2258678E2F9748EF006EB564 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		225867492F973CFA006EB564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2258677B2F9742E1006EB564 /* FirebaseAuth in Frameworks */,
+				2258677D2F9742E1006EB564 /* FirebaseFirestore in Frameworks */,
+				2258677F2F9742E1006EB564 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225867592F973CFC006EB564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225867632F973CFD006EB564 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		225867432F973CFA006EB564 = {
+			isa = PBXGroup;
+			children = (
+				2258674E2F973CFA006EB564 /* cricscoreAdmin */,
+				2258675F2F973CFC006EB564 /* cricscoreAdminTests */,
+				225867692F973CFD006EB564 /* cricscoreAdminUITests */,
+				2258674D2F973CFA006EB564 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2258674D2F973CFA006EB564 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2258674C2F973CFA006EB564 /* cricscoreAdmin.app */,
+				2258675C2F973CFC006EB564 /* cricscoreAdminTests.xctest */,
+				225867662F973CFD006EB564 /* cricscoreAdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2258674E2F973CFA006EB564 /* cricscoreAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				225867802F9745BB006EB564 /* GoogleService-Info.plist */,
+				2258674F2F973CFA006EB564 /* cricscoreAdminApp.swift */,
+				225867532F973CFC006EB564 /* Assets.xcassets */,
+				225867552F973CFC006EB564 /* Preview Content */,
+				225867822F9746A4006EB564 /* AdminService.swift */,
+				225867842F974705006EB564 /* AdminContentView.swift */,
+				225867862F9747A9006EB564 /* InningsAndBallEntry.swift */,
+				225867882F9747FF006EB564 /* FirebaseMatch.swift */,
+				2258678A2F974836006EB564 /* BallModel.swift */,
+				2258678C2F974890006EB564 /* SharedComponents.swift */,
+				2258678E2F9748EF006EB564 /* Services.swift */,
+			);
+			path = cricscoreAdmin;
+			sourceTree = "<group>";
+		};
+		225867552F973CFC006EB564 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				225867562F973CFC006EB564 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2258675F2F973CFC006EB564 /* cricscoreAdminTests */ = {
+			isa = PBXGroup;
+			children = (
+				225867602F973CFD006EB564 /* cricscoreAdminTests.swift */,
+			);
+			path = cricscoreAdminTests;
+			sourceTree = "<group>";
+		};
+		225867692F973CFD006EB564 /* cricscoreAdminUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2258676A2F973CFD006EB564 /* cricscoreAdminUITests.swift */,
+				2258676C2F973CFD006EB564 /* cricscoreAdminUITestsLaunchTests.swift */,
+			);
+			path = cricscoreAdminUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2258674B2F973CFA006EB564 /* cricscoreAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225867702F973CFD006EB564 /* Build configuration list for PBXNativeTarget "cricscoreAdmin" */;
+			buildPhases = (
+				225867482F973CFA006EB564 /* Sources */,
+				225867492F973CFA006EB564 /* Frameworks */,
+				2258674A2F973CFA006EB564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cricscoreAdmin;
+			packageProductDependencies = (
+				2258677A2F9742E1006EB564 /* FirebaseAuth */,
+				2258677C2F9742E1006EB564 /* FirebaseFirestore */,
+				2258677E2F9742E1006EB564 /* FirebaseFirestoreSwift */,
+			);
+			productName = cricscoreAdmin;
+			productReference = 2258674C2F973CFA006EB564 /* cricscoreAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2258675B2F973CFC006EB564 /* cricscoreAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225867732F973CFD006EB564 /* Build configuration list for PBXNativeTarget "cricscoreAdminTests" */;
+			buildPhases = (
+				225867582F973CFC006EB564 /* Sources */,
+				225867592F973CFC006EB564 /* Frameworks */,
+				2258675A2F973CFC006EB564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2258675E2F973CFC006EB564 /* PBXTargetDependency */,
+			);
+			name = cricscoreAdminTests;
+			productName = cricscoreAdminTests;
+			productReference = 2258675C2F973CFC006EB564 /* cricscoreAdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		225867652F973CFD006EB564 /* cricscoreAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 225867762F973CFD006EB564 /* Build configuration list for PBXNativeTarget "cricscoreAdminUITests" */;
+			buildPhases = (
+				225867622F973CFD006EB564 /* Sources */,
+				225867632F973CFD006EB564 /* Frameworks */,
+				225867642F973CFD006EB564 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				225867682F973CFD006EB564 /* PBXTargetDependency */,
+			);
+			name = cricscoreAdminUITests;
+			productName = cricscoreAdminUITests;
+			productReference = 225867662F973CFD006EB564 /* cricscoreAdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		225867442F973CFA006EB564 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2258674B2F973CFA006EB564 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2258675B2F973CFC006EB564 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2258674B2F973CFA006EB564;
+					};
+					225867652F973CFD006EB564 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 2258674B2F973CFA006EB564;
+					};
+				};
+			};
+			buildConfigurationList = 225867472F973CFA006EB564 /* Build configuration list for PBXProject "cricscoreAdmin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 225867432F973CFA006EB564;
+			packageReferences = (
+				225867792F9742E1006EB564 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 2258674D2F973CFA006EB564 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2258674B2F973CFA006EB564 /* cricscoreAdmin */,
+				2258675B2F973CFC006EB564 /* cricscoreAdminTests */,
+				225867652F973CFD006EB564 /* cricscoreAdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2258674A2F973CFA006EB564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225867572F973CFC006EB564 /* Preview Assets.xcassets in Resources */,
+				225867812F9745BB006EB564 /* GoogleService-Info.plist in Resources */,
+				225867542F973CFC006EB564 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2258675A2F973CFC006EB564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225867642F973CFD006EB564 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		225867482F973CFA006EB564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2258678B2F974836006EB564 /* BallModel.swift in Sources */,
+				225867502F973CFA006EB564 /* cricscoreAdminApp.swift in Sources */,
+				225867832F9746A4006EB564 /* AdminService.swift in Sources */,
+				2258678D2F974890006EB564 /* SharedComponents.swift in Sources */,
+				225867892F9747FF006EB564 /* FirebaseMatch.swift in Sources */,
+				2258678F2F9748EF006EB564 /* Services.swift in Sources */,
+				225867872F9747A9006EB564 /* InningsAndBallEntry.swift in Sources */,
+				225867852F974705006EB564 /* AdminContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225867582F973CFC006EB564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225867612F973CFD006EB564 /* cricscoreAdminTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		225867622F973CFD006EB564 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2258676D2F973CFD006EB564 /* cricscoreAdminUITestsLaunchTests.swift in Sources */,
+				2258676B2F973CFD006EB564 /* cricscoreAdminUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2258675E2F973CFC006EB564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2258674B2F973CFA006EB564 /* cricscoreAdmin */;
+			targetProxy = 2258675D2F973CFC006EB564 /* PBXContainerItemProxy */;
+		};
+		225867682F973CFD006EB564 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2258674B2F973CFA006EB564 /* cricscoreAdmin */;
+			targetProxy = 225867672F973CFD006EB564 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2258676E2F973CFD006EB564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2258676F2F973CFD006EB564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		225867712F973CFD006EB564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cricscoreAdmin/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.cricscoreAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		225867722F973CFD006EB564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"cricscoreAdmin/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.cricscoreAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		225867742F973CFD006EB564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.cricscoreAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cricscoreAdmin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cricscoreAdmin";
+			};
+			name = Debug;
+		};
+		225867752F973CFD006EB564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.cricscoreAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cricscoreAdmin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cricscoreAdmin";
+			};
+			name = Release;
+		};
+		225867772F973CFD006EB564 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.cricscoreAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cricscoreAdmin;
+			};
+			name = Debug;
+		};
+		225867782F973CFD006EB564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = abc.cricscoreAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cricscoreAdmin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		225867472F973CFA006EB564 /* Build configuration list for PBXProject "cricscoreAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2258676E2F973CFD006EB564 /* Debug */,
+				2258676F2F973CFD006EB564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225867702F973CFD006EB564 /* Build configuration list for PBXNativeTarget "cricscoreAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225867712F973CFD006EB564 /* Debug */,
+				225867722F973CFD006EB564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225867732F973CFD006EB564 /* Build configuration list for PBXNativeTarget "cricscoreAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225867742F973CFD006EB564 /* Debug */,
+				225867752F973CFD006EB564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		225867762F973CFD006EB564 /* Build configuration list for PBXNativeTarget "cricscoreAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				225867772F973CFD006EB564 /* Debug */,
+				225867782F973CFD006EB564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		225867792F9742E1006EB564 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2258677A2F9742E1006EB564 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 225867792F9742E1006EB564 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2258677C2F9742E1006EB564 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 225867792F9742E1006EB564 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2258677E2F9742E1006EB564 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 225867792F9742E1006EB564 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 225867442F973CFA006EB564 /* Project object */;
+}
